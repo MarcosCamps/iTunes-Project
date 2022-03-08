@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Album extends React.Component {
+class NotFound extends React.Component {
   render() {
     return (
       <div data-testid="page-not-found">
@@ -10,4 +10,4 @@ class Album extends React.Component {
   }
 }
 
-export default Album;
+export default NotFound;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Search extends React.Component {
+class ProfileEdit extends React.Component {
   render() {
     return (
       <div data-testid="page-profile-edit">
@@ -10,4 +10,4 @@ class Search extends React.Component {
   }
 }
 
-export default Search;
+export default ProfileEdit;

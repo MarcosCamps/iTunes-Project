@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Album from './pages/Album';
-import Favorites from './pages/Favorites';
 import Login from './pages/Login';
+import Favorites from './pages/Favorites';
+import Album from './pages/Album';
 import Search from './pages/Search';
 import Profile from './pages/Profile';
 import ProfileEdit from './pages/ProfileEdit';
