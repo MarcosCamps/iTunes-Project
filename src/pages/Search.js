@@ -94,7 +94,7 @@ class Search extends React.Component {
                             alt=""
                           />
                           <h3>{ album.collectionName }</h3>
-                          <span>{ album.artistName }</span>
+                          <p>{ album.artistName }</p>
                         </Link>
                         {console.log(album.collectionId)}
                       </div>
