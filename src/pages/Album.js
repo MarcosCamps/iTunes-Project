@@ -51,6 +51,7 @@ class Album extends React.Component {
           return (
             <MusicCard
               key={ trackId }
+              trackId={ trackId }
               trackName={ trackName }
               previewUrl={ previewUrl }
             />);

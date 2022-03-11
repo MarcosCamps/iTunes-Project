@@ -33,7 +33,6 @@ class Login extends React.Component {
     this.setState({ loading: true });
     await createUser({ name: nameUser });
     this.setState({ loading: false, redirect: true });
-    console.log('after await');
   }
 
   render() {

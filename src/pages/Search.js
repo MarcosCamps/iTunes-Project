@@ -42,7 +42,6 @@ class Search extends React.Component {
       artistName: '',
       inputArtist: artistName,
     });
-    console.log(results);
   }
 
   render() {
@@ -83,8 +82,8 @@ class Search extends React.Component {
                 ? <p>Nenhum álbum foi encontrado</p>
                 : (
                   <section>
-                    {albums.map((album, index) => (
-                      <div key={ `album-${index}` }>
+                    {albums.map((album) => (
+                      <div key={ album.collectionId }>
                         <Link
                           to={ `/album/${album.collectionId}` }
                           data-testid={ `link-to-album-${album.collectionId}` }
@@ -96,7 +95,6 @@ class Search extends React.Component {
                           <h3>{ album.collectionName }</h3>
                           <p>{ album.artistName }</p>
                         </Link>
-                        {console.log(album.collectionId)}
                       </div>
                     ))}
                   </section>
