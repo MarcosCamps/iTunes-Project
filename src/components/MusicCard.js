@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { addSong, getFavoriteSongs } from '../services/favoriteSongsAPI';
+import { addSong } from '../services/favoriteSongsAPI';
+import './card.css';
 
 class MusicCard extends React.Component {
   constructor(props) {
@@ -45,18 +46,18 @@ class MusicCard extends React.Component {
       this.setState({
         loading: false,
       });
-      await getFavoriteSongs();
-      this.setState({
-        isChecked: true,
-      });
+      // await getFavoriteSongs();
+      // this.setState({
+      //   isChecked: true,
+      // });
     });
   }
 
   render() {
-    const { trackName, previewUrl, trackId } = this.props;
+    const { trackName, previewUrl, trackId } = this.props; // colocar o song
     const { isChecked, loading } = this.state;
     return (
-      <div>
+      <div className="players">
         <h1>{ trackName }</h1>
         <audio data-testid="audio-component" src={ previewUrl } controls>
           <track kind="captions" />
@@ -75,7 +76,7 @@ class MusicCard extends React.Component {
                 value={ isChecked }
                 name={ trackName }
                 onChange={ this.checkFavorite }
-                checked={ isChecked }
+                checked={ isChecked } // adicionar song
               />
             </label>
           )}
@@ -92,3 +93,4 @@ MusicCard.propTypes = {
 };
 
 export default MusicCard;
+// Requisito 9 auxiliado pela Débora Serra, tribo B.

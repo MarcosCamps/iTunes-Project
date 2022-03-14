@@ -1,6 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { createUser } from '../services/userAPI';
+import './Login.css';
 
 class Login extends React.Component {
   constructor() {
@@ -38,11 +39,12 @@ class Login extends React.Component {
   render() {
     const { buttonDisabled, loading, redirect } = this.state;
     return (
-      <div data-testid="page-login">
+      <div className="login" data-testid="page-login">
         { loading
           ? <p>Carregando...</p>
           : (
-            <form>
+            <form className="enter">
+              <h1>TrybeTunes</h1>
               <input
                 data-testid="login-name-input"
                 type="text"

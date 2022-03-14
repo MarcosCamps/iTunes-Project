@@ -29,7 +29,7 @@ class Header extends React.Component {
           : (
             <h1 data-testid="header-user-name">{ user }</h1>
           )}
-        <nav>
+        <nav className="header">
           <Link data-testid="link-to-search" to="/search">Search</Link>
           <br />
           <Link data-testid="link-to-favorites" to="/favorites">Favorites</Link>
