@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { addSong } from '../services/favoriteSongsAPI';
-import './card.css';
 
 class MusicCard extends React.Component {
   constructor(props) {

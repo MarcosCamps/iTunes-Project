@@ -1,13 +1,11 @@
 body {
-    background-image: url("https://wallpapercave.com/wp/YWaaUWl.jpg");
-    background-position: center;
-    background-size: 150%;
-    
+  background-image: url("https://wallpapercave.com/wp/YWaaUWl.jpg");
+  background-position: center;
+  background-size: 150%;
 }
 
 .enter {
-    text-align: center;
-    margin-top: 150px;
-    color: white;
-
+  text-align: center;
+  margin-top: 150px;
+  color: white;
 }
